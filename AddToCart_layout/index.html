@@ -11,30 +11,30 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
-    <script src="./index.js"></script>
   </head>
   <body>
     <div class="container">
       <div class="product-container">
         <div class="product-images">
-          <div class="thumbnails">
+          <div class="thumbnails" id="thumbnails">
+            <!-- onclick="changeImage(this.src,this.id)" -->
             <img
               src="./images/T-Shirt1.png"
               alt="Thumbnail 1"
               class="thumbnail active"
-              data-image="/api/placeholder/400/500?text=1"
+              id="thumbnail1"
             />
             <img
               src="./images/T-Shirt2.png"
               alt="Thumbnail 2"
               class="thumbnail"
-              data-image="/api/placeholder/400/500?text=2"
+              id="thumbnail2"
             />
             <img
-              src="./images/T-Shirt1.png"
+              src="./images/T-Shirt3.png"
               alt="Thumbnail 3"
               class="thumbnail"
-              data-image="/api/placeholder/400/500?text=3"
+              id="thumbnail3"
             />
           </div>
           <div class="main-image-container">
@@ -74,5 +74,6 @@
         </div>
       </div>
     </div>
+    <script src="./index.js"></script>
   </body>
 </html>
