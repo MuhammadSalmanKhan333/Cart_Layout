@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Trirong:ital,wght@0,200;0,300;0,400;0,500;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="product-container">
+        <div class="product-images">
+          <div class="thumbnails">
+            <img
+              src="./images/T-Shirt1.png"
+              alt="Thumbnail 1"
+              class="thumbnail active"
+              data-image="/api/placeholder/400/500?text=1"
+            />
+            <img
+              src="./images/T-Shirt2.png"
+              alt="Thumbnail 2"
+              class="thumbnail"
+              data-image="/api/placeholder/400/500?text=2"
+            />
+            <img
+              src="./images/T-Shirt1.png"
+              alt="Thumbnail 3"
+              class="thumbnail"
+              data-image="/api/placeholder/400/500?text=3"
+            />
+          </div>
+          <div class="main-image-container">
+            <img
+              src="./images/T-Shirt1.png"
+              alt="Main Product Image"
+              class="main-image"
+              id="main-image"
+            />
+          </div>
+        </div>
+        <div class="product-info">
+          <div>
+            <p class="brand">POLO RALPH</p>
+            <h1 class="product-title">Custom Fit Polo Bear Oxford Shirt</h1>
+            <p class="product-description">
+              Blue polo with a classic cut. Made of smooth and soft cotton.
+            </p>
+            <div class="product-price">
+              <p class="discount-price">
+                $99.00
+                <span class="discount">-25%</span>
+              </p>
+              <p class="original-price">
+                $<span id="original-price">132.00</span>
+              </p>
+            </div>
+            <div class="size-selector">
+              <p>CHOOSE SIZE</p>
+              <button data-size="S" data-price="132.00">S</button>
+              <button data-size="M" data-price="135.00">M</button>
+              <button data-size="L" data-price="138.00">L</button>
+              <button data-size="XL" data-price="138.00">XL</button>
+            </div>
+          </div>
+          <button class="add-to-bag">ADD TO BAG</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
