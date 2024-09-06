@@ -54,9 +54,9 @@
               Blue polo with a classic cut. Made of smooth and soft cotton.
             </p>
             <div class="product-price">
-              <p class="discount-price">
-                $99.00
-                <span class="discount">-25%</span>
+              <p class="discount-price" id="discount-price">
+                <span id="discounted-price">$99.00</span>
+                <span class="discount" id="discount">-25%</span>
               </p>
               <p class="original-price">
                 $<span id="original-price">132.00</span>
@@ -64,13 +64,22 @@
             </div>
             <div class="size-selector">
               <p>CHOOSE SIZE</p>
-              <button data-size="S" data-price="132.00">S</button>
-              <button data-size="M" data-price="135.00">M</button>
-              <button data-size="L" data-price="138.00">L</button>
-              <button data-size="XL" data-price="138.00">XL</button>
+              <button id="S" data-price="132.00" onClick="changeSize(this.id)">
+                S
+              </button>
+
+              <button id="M" data-price="135.00" onClick="changeSize(this.id)">
+                M
+              </button>
+              <button id="L" data-price="138.00" onClick="changeSize(this.id)">
+                L
+              </button>
+              <button id="XL" data-price="145.00" onClick="changeSize(this.id)">
+                XL
+              </button>
             </div>
           </div>
-          <button class="add-to-bag">ADD TO BAG</button>
+          <button class="add-to-bag" id="addToBag">ADD TO BAG</button>
         </div>
       </div>
     </div>
